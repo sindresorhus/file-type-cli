@@ -1,6 +1,6 @@
 {
   "name": "file-type-cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Detect the file type of a file or stdin",
   "license": "MIT",
   "repository": "sindresorhus/file-type-cli",
