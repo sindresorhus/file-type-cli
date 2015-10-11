@@ -1,0 +1,61 @@
+{
+  "name": "file-type-cli",
+  "version": "0.0.0",
+  "description": "Detect the file type of a file or stdin",
+  "license": "MIT",
+  "repository": "sindresorhus/file-type-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "file-type": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "mime",
+    "file",
+    "type",
+    "archive",
+    "image",
+    "img",
+    "pic",
+    "picture",
+    "flash",
+    "photo",
+    "video",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "exif",
+    "exe",
+    "binary",
+    "buffer",
+    "uint8array"
+  ],
+  "dependencies": {
+    "file-type": "^3.0.0",
+    "meow": "^3.4.2",
+    "read-chunk": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "pify": "^2.2.0",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
