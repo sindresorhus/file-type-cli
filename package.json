@@ -46,16 +46,13 @@
     "uint8array"
   ],
   "dependencies": {
-    "file-type": "^3.0.0",
+    "file-type": "^4.0.0",
     "meow": "^3.4.2",
-    "read-chunk": "^1.0.1"
+    "read-chunk": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
-    "pify": "^2.2.0",
+    "execa": "^0.6.0",
     "xo": "*"
-  },
-  "xo": {
-    "esnext": true
   }
 }
