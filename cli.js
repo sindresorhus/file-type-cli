@@ -34,7 +34,7 @@ if (!input && process.stdin.isTTY) {
 }
 
 if (input) {
-	init(readChunk.sync(cli.input[0], 0, 262));
+	init(readChunk.sync(cli.input[0], 0, 4100));
 } else {
 	process.stdin.once('data', init);
 }
