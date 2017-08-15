@@ -1,57 +1,57 @@
 {
-  "name": "file-type-cli",
-  "version": "2.0.0",
-  "description": "Detect the file type of a file or stdin",
-  "license": "MIT",
-  "repository": "sindresorhus/file-type-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "file-type": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "mime",
-    "file",
-    "type",
-    "archive",
-    "image",
-    "img",
-    "pic",
-    "picture",
-    "flash",
-    "photo",
-    "video",
-    "detect",
-    "check",
-    "is",
-    "exif",
-    "exe",
-    "binary",
-    "buffer",
-    "uint8array"
-  ],
-  "dependencies": {
-    "file-type": "^6.1.0",
-    "meow": "^3.4.2",
-    "read-chunk": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.8.0",
-    "xo": "*"
-  }
+	"name": "file-type-cli",
+	"version": "2.0.0",
+	"description": "Detect the file type of a file or stdin",
+	"license": "MIT",
+	"repository": "sindresorhus/file-type-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"file-type": "cli.js"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"mime",
+		"file",
+		"type",
+		"archive",
+		"image",
+		"img",
+		"pic",
+		"picture",
+		"flash",
+		"photo",
+		"video",
+		"detect",
+		"check",
+		"is",
+		"exif",
+		"exe",
+		"binary",
+		"buffer",
+		"uint8array"
+	],
+	"dependencies": {
+		"file-type": "^6.1.0",
+		"meow": "^3.4.2",
+		"read-chunk": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"execa": "^0.8.0",
+		"xo": "*"
+	}
 }
