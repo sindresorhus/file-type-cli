@@ -45,7 +45,7 @@
 		"uint8array"
 	],
 	"dependencies": {
-		"file-type": "^6.1.0",
+		"file-type": "^7.2.0",
 		"meow": "^3.4.2",
 		"read-chunk": "^2.0.0"
 	},
