@@ -29,12 +29,12 @@ function init(data) {
 const input = cli.input[0];
 
 if (!input && process.stdin.isTTY) {
-	console.error('Specify a filename');
+	console.error('Specify a file path');
 	process.exit(1);
 }
 
 if (input) {
-	init(readChunk.sync(cli.input[0], 0, 4100));
+	init(readChunk.sync(cli.input[0], 0, fileType.minimumBytes));
 } else {
 	process.stdin.once('data', init);
 }

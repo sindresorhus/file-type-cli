@@ -13,7 +13,7 @@
 		"file-type": "cli.js"
 	},
 	"engines": {
-		"node": ">=4"
+		"node": ">=8"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -45,13 +45,13 @@
 		"uint8array"
 	],
 	"dependencies": {
-		"file-type": "^7.2.0",
-		"meow": "^3.4.2",
-		"read-chunk": "^2.0.0"
+		"file-type": "^12.0.0",
+		"meow": "^5.0.0",
+		"read-chunk": "^3.2.0"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"execa": "^0.8.0",
-		"xo": "*"
+		"ava": "^2.1.0",
+		"execa": "^1.0.0",
+		"xo": "^0.24.0"
 	}
 }

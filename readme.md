@@ -31,8 +31,3 @@ $ file-type --help
 ## Related
 
 - [file-type](https://github.com/sindresorhus/file-type) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
