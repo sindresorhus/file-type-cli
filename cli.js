@@ -23,18 +23,6 @@ function printResult(type) {
 	console.log(`${type.ext}\n${type.mime}`);
 }
 
-async function initFromStream(stream) {
-	const type = await FileType.fromStream(stream);
-
-	printResult(type);
-}
-
-async function initFromFilePath(filePath) {
-	const type = await FileType.fromFile(filePath);
-
-	printResult(type);
-}
-
 const input = cli.input[0];
 
 if (!input && process.stdin.isTTY) {
@@ -42,8 +30,10 @@ if (!input && process.stdin.isTTY) {
 	process.exit(1);
 }
 
-if (input) {
-	initFromFilePath(input);
-} else {
-	initFromStream(process.stdin);
-}
+(async () => {
+	if (input) {
+		printResult(await FileType.fromFile(input));
+	} else {
+		printResult(await FileType.fromStream(process.stdin));
+	}
+})();

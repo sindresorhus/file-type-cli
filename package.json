@@ -4,16 +4,17 @@
 	"description": "Detect the file type of a file or stdin",
 	"license": "MIT",
 	"repository": "sindresorhus/file-type-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"bin": {
 		"file-type": "cli.js"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -46,11 +47,11 @@
 	],
 	"dependencies": {
 		"file-type": "^14.0.0",
-		"meow": "^5.0.0"
+		"meow": "^7.0.1"
 	},
 	"devDependencies": {
 		"ava": "^2.1.0",
-		"execa": "^1.0.0",
-		"xo": "^0.24.0"
+		"execa": "^4.0.3",
+		"xo": "^0.32.1"
 	}
 }

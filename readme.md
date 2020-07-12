@@ -1,14 +1,12 @@
-# file-type-cli [![Build Status](https://travis-ci.org/sindresorhus/file-type-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/file-type-cli)
+# file-type-cli [![Build Status](https://travis-ci.com/sindresorhus/file-type-cli.svg?branch=master)](https://travis-ci.com/github/sindresorhus/file-type-cli)
 
 > Detect the file type of a file or stdin
-
 
 ## Install
 
 ```
 $ npm install --global file-type-cli
 ```
-
 
 ## Usage
 
@@ -26,7 +24,6 @@ $ file-type --help
 ```
 
 [Supported file types](https://github.com/sindresorhus/file-type#supported-file-types)
-
 
 ## Related
 
