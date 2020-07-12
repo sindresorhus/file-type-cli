@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 'use strict';
-const readChunk = require('read-chunk');
 const meow = require('meow');
-const fileType = require('file-type');
+const FileType = require('file-type');
 
 const cli = meow(`
 	Usage
@@ -15,15 +14,25 @@ const cli = meow(`
 	  image/png
 `);
 
-function init(data) {
-	const type = fileType(data);
-
+function printResult(type) {
 	if (!type) {
 		console.error('Unrecognized file type');
 		process.exit(65);
 	}
 
 	console.log(`${type.ext}\n${type.mime}`);
+}
+
+async function initFromStream(stream) {
+	const type = await FileType.fromStream(stream);
+
+	printResult(type);
+}
+
+async function initFromFilePath(filePath) {
+	const type = await FileType.fromFile(filePath);
+
+	printResult(type);
 }
 
 const input = cli.input[0];
@@ -34,7 +43,7 @@ if (!input && process.stdin.isTTY) {
 }
 
 if (input) {
-	init(readChunk.sync(cli.input[0], 0, fileType.minimumBytes));
+	initFromFilePath(input);
 } else {
-	process.stdin.once('data', init);
+	initFromStream(process.stdin);
 }
