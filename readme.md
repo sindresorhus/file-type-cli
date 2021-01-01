@@ -1,4 +1,4 @@
-# file-type-cli [![Build Status](https://travis-ci.com/sindresorhus/file-type-cli.svg?branch=master)](https://travis-ci.com/github/sindresorhus/file-type-cli)
+# file-type-cli
 
 > Detect the file type of a file or stdin
 
