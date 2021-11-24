@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const FileType = require('file-type');
+import process from 'node:process';
+import meow from 'meow';
+import {fileTypeFromFile, fileTypeFromStream} from 'file-type';
 
 const cli = meow(`
 	Usage
@@ -12,7 +12,9 @@ const cli = meow(`
 	  $ file-type unicorn.png
 	  png
 	  image/png
-`);
+`, {
+	importMeta: import.meta,
+});
 
 function printResult(type) {
 	if (!type) {
@@ -32,8 +34,8 @@ if (!input && process.stdin.isTTY) {
 
 (async () => {
 	if (input) {
-		printResult(await FileType.fromFile(input));
+		printResult(await fileTypeFromFile(input));
 	} else {
-		printResult(await FileType.fromStream(process.stdin));
+		printResult(await fileTypeFromStream(process.stdin));
 	}
 })();

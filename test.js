@@ -1,6 +1,6 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import test from 'ava';
-import execa from 'execa';
+import {execa} from 'execa';
 
 test('main', async t => {
 	const {stdout} = await execa('./cli.js', ['fixture.7z']);
@@ -9,7 +9,7 @@ test('main', async t => {
 
 test('stdin', async t => {
 	const {stdout} = await execa('./cli.js', {
-		input: fs.readFileSync('fixture.7z')
+		input: fs.readFileSync('fixture.7z'),
 	});
 	t.is(stdout, '7z\napplication/x-7z-compressed');
 });

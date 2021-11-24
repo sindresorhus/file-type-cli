@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --global file-type-cli
+```sh
+npm install --global file-type-cli
 ```
 
 ## Usage
